@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rose Day for Aarya 🌹</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Baloo 2', cursive;}
+body{min-height:100vh;background:linear-gradient(180deg,#070013,#1b0033);color:#fff;overflow-x:hidden;}
+.float{position:fixed;top:-40px;font-size:1.3rem;opacity:.85;animation:fall linear infinite;}
+@keyframes fall{to{transform:translateY(120vh) rotate(360deg);}}
+.card{width:94%;max-width:420px;margin:5vh auto;background:rgba(255,255,255,.06);
+backdrop-filter:blur(18px);border-radius:28px;padding:24px;
+box-shadow:0 0 70px rgba(255,105,180,.35);text-align:center;}
+.rose{font-size:2.6rem;animation:glow 3s infinite;}
+@keyframes glow{50%{filter:drop-shadow(0 0 14px #ff5fa2);}}
+.name{font-size:2.1rem;font-weight:800;color:#ff7dbf;
+text-shadow:0 0 14px rgba(255,125,191,.9);margin:10px 0;}
+.photo{width:155px;height:155px;border-radius:50%;margin:14px auto;overflow:hidden;
+border:3px solid rgba(255,105,180,.9);box-shadow:0 0 28px rgba(255,105,180,.8);}
+.photo img{width:100%;height:100%;object-fit:cover;}
+.letter{background:rgba(0,0,0,.35);border-radius:18px;padding:18px;margin-top:18px;}
+.shayari{font-size:1.05rem;line-height:1.9;color:#ffd6ea;}
+.heart{font-size:2.3rem;margin-top:14px;animation:beat 1.2s infinite;}
+@keyframes beat{50%{transform:scale(1.25);}}
+.btn{display:inline-block;margin-top:18px;padding:7px 20px;border-radius:22px;
+border:1px solid rgba(255,255,255,.4);color:#fff;text-decoration:none;}
+.teddy{position:fixed;bottom:10px;left:-60px;font-size:2.2rem;
+animation:teddyMove 20s linear infinite;}
+@keyframes teddyMove{to{left:110%;}}
+.footer{margin-top:18px;font-size:.7rem;opacity:.6;}
+</style>
+</head>
+
+<body>
+
+<script>
+const flowers=["🌹","🌸","🌷"];
+for(let i=0;i<28;i++){
+ let f=document.createElement("div");
+ f.className="float";
+ f.innerHTML=flowers[Math.floor(Math.random()*flowers.length)];
+ f.style.left=Math.random()*100+"vw";
+ f.style.animationDuration=6+Math.random()*7+"s";
+ document.body.appendChild(f);
+}
+</script>
+
+<div class="teddy">🧸</div>
+
+<div class="card">
+  <div class="rose">🌹</div>
+  <div class="name">Aarya</div>
+
+  <div class="photo">
+    <img src="aarya.jpeg" alt="Aarya">
+  </div>
+
+  <div class="letter">
+    <div class="shayari">
+      Even a silent rose can speak 🌹<br><br>
+      The words that the heart cannot say ✨<br><br>
+      Aarya, with just one smile of yours 💗<br>
+      The entire season of my heart changes 🤍<br><br>
+      Some people stay far away,<br>
+      yet live closest to the heart 🌙
+    </div>
+    <div class="heart">❤️</div>
+  </div>
+
+  <a href="gallery.html" class="btn">See My Feelings 🤍</a>
+  <div class="footer">Created by Shravan Malave</div>
+</div>
+
+</body>
+</html>
